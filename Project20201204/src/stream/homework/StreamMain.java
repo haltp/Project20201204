@@ -68,3 +68,15 @@ public class StreamMain {
 //2.선적부서
 //급여합계(평균)
 //3. 급여가 5000에서 10000인사람의 사원번호 이름 메일 급여
+
+
+
+select employee_id, first_name, email, salary from employees where salary >=10000;
+
+select sum(salary)
+from employees
+where department_id = '50';
+
+select employee_id, first_name, email, salary
+from employees
+where salary between 5000 and 10000;
